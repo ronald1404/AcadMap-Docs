@@ -1,0 +1,50 @@
+site_name: DAR - AcadMap
+site_description: Documentação de Arquitetura de Software
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Troca para o modo escuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Troca para o modo claro
+  features:
+    - content.diagrams
+
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.details
+
+nav:
+  - Home: index.md
+  - 1. Introdução: introducao.md
+  - 2. Stakeholders: stakeholders.md
+  - 3. Preocupações Arquiteturais: preocupacoes.md
+  - 4. Pontos de Vista: pontos-de-vista.md
+  - 5. Visões:
+      - 5.1 Visão Lógica: visoes/visao-logica.md
+      - 5.2 Visão de Desenvolvimento: visoes/visao-desenvolvimento.md
+      - 5.3 Visão de Implantação: visoes/visao-implantacao.md
+      - 5.4 Visão de Processo: visoes/visao-processo.md
+      - 5.5 Visão de Cenários: visoes/visao-cenarios.md
+  - 6. Decisões Arquiteturais: dar-index.md
+  - 7. Governança de Arquitetura: governanca-arquitetura.md
+  - 8. Ferramentas de Apoios à Arquitetura: ferr-apoio-arq.md
+  - 9. Riscos e Mitigações: riscos.md
+  - Glossário: glossario.md
+  - Referências: referencias.md
