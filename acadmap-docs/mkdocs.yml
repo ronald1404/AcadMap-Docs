@@ -1,5 +1,5 @@
-site_name: DAR - AcadMap
-site_description: Documentação de Arquitetura de Software
+site_name: DAS - AcadMap
+site_description: Documentação de Arquitetura de Sistema
 
 theme:
   name: material
