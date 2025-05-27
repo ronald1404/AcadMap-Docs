@@ -1,8 +1,87 @@
 # 5.1 Visão Lógica
 
-A Visão Lógica descreve a estrutura interna do sistema, representando os principais pacotes, camadas e dependências entre componentes de software. Essa visão está dividida em duas partes, conforme os dois grandes blocos tecnológicos da solução: o backend, implementado em Java com Spring Boot, e o frontend, desenvolvido com React e empacotado via Vite.
+A Visão Lógica descreve a estrutura interna do sistema AcadMap, detalhando os principais pacotes, camadas e dependências entre os componentes de software. Esta visão está organizada em três blocos tecnológicos fundamentais: o frontend, desenvolvido com React e empacotado via Vite; o backend, implementado em Java utilizando o framework Spring Boot sob o padrão MVC (Model-View-Controller); e o banco de dados, estruturado em PostgreSQL.
 
-Ambas as camadas seguem boas práticas de engenharia, com foco em separação de responsabilidades, clareza de código e facilidade de manutenção. Os diagramas a seguir representam as estruturas propostas e seus relacionamentos internos.
+Cada camada foi desenhada com foco em boas práticas de engenharia de software, promovendo a separação clara de responsabilidades, a reutilização de código, a legibilidade e a facilidade de manutenção. 
+
+Os diagramas a seguir ilustram essas estruturas e seus relacionamentos internos e externos, permitindo uma visualização clara da organização lógica do sistema.
+
+### Diagrama de Componentes de Alto Nível
+```mermaid
+graph TD
+
+  subgraph "Sistema AcadMap"
+    
+    subgraph "Frontend"
+      FPages[Pages]
+      FComponents[Components]
+      FServices[FrontendServices]
+    end
+
+    subgraph "Backend"
+      BController[Controllers]
+      BService[BackendServices]
+      BRepository[Repository]
+      BModel[Models]
+    end
+
+    DB[(PostgreSQL)]
+
+    FPages --> FComponents
+    FPages --> FServices
+    FServices --> BController
+    BController --> BService
+    BService --> BRepository
+    BService --> BModel
+    BRepository --> DB
+
+  end
+```
+
+Clique nos blocos abaixo para visualizar versões em outros formatos:
+
+??? note "Versão PlantUML"
+    ```plantuml
+    @startuml
+    title COMP-GERAL-01 – Diagrama de Componentes do Sistema AcadMap (Visão de Alto Nível)
+
+    ' Container principal
+    node "Sistema AcadMap" {
+
+      package "Frontend - GUI\n(React + Vite)" {
+        [Pages <<component>>] as FPages
+        [Components <<component>>] as FComponents
+        [Services <<component>>] as FServices
+      }
+
+      package "Backend - Lógica de Negócio\n(Spring Boot)" {
+        [Controllers <<component>>] as BController
+        [Services <<component>>] as BService
+        [Repository <<component>>] as BRepository
+        [Models <<component>>] as BModel
+      }
+
+      database "PostgreSQL" as DB
+
+
+      ' Interações internas - frontend
+      FPages --> FComponents : Renderiza UI
+      FPages --> FServices : Invoca serviços REST
+
+      ' Comunicação frontend → backend (API REST)
+      FServices --> BController : Requisições HTTP (JSON)
+
+      ' Backend interno
+      BController --> BService : Chamada de lógica de negócio
+      BService --> BRepository : Consulta/Manipula dados
+      BService --> BModel : Acesso ao modelo de domínio
+      BRepository --> DB : Operações CRUD
+    }
+    @enduml
+    ```
+??? note "Versão .png"
+    ![COMP-GERAL-01](../diagramas/component/COMP-GERAL-01.png)
+
 
 ---
 
@@ -111,7 +190,7 @@ Clique nos blocos abaixo para visualizar versões em outros formatos:
     @enduml
     ```
 ??? note "Versão .png"
-    ![COMP-BACK-01](../Diagramas/Component/COMP-BACK-01.png)
+    ![COMP-BACK-01](../diagramas/component/COMP-BACK-01.png)
 
 
 ---
@@ -201,5 +280,5 @@ Clique nos blocos abaixo para visualizar versões em outros formatos:
     ```
 
 ??? "Versão .png"
-    ![COMP-FRONT-01](../Diagramas/Component/COMP-FRONT-01.png)
+    ![COMP-FRONT-01](../diagramas/component/COMP-FRONT-01.png)
 
