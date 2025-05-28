@@ -21,3 +21,5 @@ Sistema web para permitir o armazenamento, consulta, classificação e geração
 - **COMP-BACK-01**, **SEQU-MTRC-02**, etc.: Códigos de identificação dos diagramas utilizados ao longo do documento, seguindo o padrão `[TIPO]-[OBJETO]-[NÚMERO]`.
 - **Controller / Service / Repository / Model**: Camadas da arquitetura backend seguindo o padrão MVC, responsáveis respectivamente por controlar requisições, encapsular regras de negócio, acessar dados e representar entidades de domínio.
 - **Pages / Components / Services (frontend)**: Diretórios lógicos do frontend React. `pages` contém telas principais, `components` agrupa componentes reutilizáveis, e `services` abstrai chamadas à API.
+
+---

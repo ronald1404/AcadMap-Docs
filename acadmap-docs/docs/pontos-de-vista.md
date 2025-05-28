@@ -12,3 +12,4 @@ A tabela a seguir descreve os pontos de vista adotados neste projeto, sua finali
 | PV04 | Processo        | Representar interações e fluxos de execução                    | Diagrama de Sequência (UML)         | P03, P04, P10                |
 | PV05 | Uso             | Ilustrar a experiência do usuário e seus fluxos de interação   | Cenários, fluxos, protótipos (Figma)     | P02, P04, P08                |
 
+---

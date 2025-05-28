@@ -6,7 +6,15 @@ Cada camada foi desenhada com foco em boas práticas de engenharia de software, 
 
 Os diagramas a seguir ilustram essas estruturas e seus relacionamentos internos e externos, permitindo uma visualização clara da organização lógica do sistema.
 
-### Diagrama de Componentes de Alto Nível
+## 5.1.1 Visão Geral do Sistema
+
+O acesso ao sistema se inicia no navegador do usuário, que interage com o frontend da aplicação via protocolo HTTPS. Esse frontend é uma aplicação desenvolvida em React e hospedada em um servidor web Apache, o qual está exposto à Internet. A camada de frontend é responsável por renderizar a interface do usuário e encaminhar as requisições para o backend.
+
+As requisições de dados feitas pelo frontend são encaminhadas ao backend, uma aplicação Java Spring Boot, que atua como servidor de aplicação. A comunicação entre o frontend e o backend se dá via HTTP interno, utilizando uma API REST baseada em JSON.
+
+O backend, por sua vez, realiza operações de leitura e escrita em um banco de dados PostgreSQL, hospedado em um servidor dedicado de banco de dados. Essa comunicação utiliza a especificação JPA (Java Persistence API), implementada com o JDBC, por meio da porta padrão 5432.
+
+### Diagrama de Componentes de Alto Nível - COMP-GERAL-01
 ```mermaid
 graph TD
 
@@ -40,7 +48,7 @@ graph TD
 
 Clique nos blocos abaixo para visualizar versões em outros formatos:
 
-??? note "Versão PlantUML"
+??? info "Versão PlantUML"
     ```plantuml
     @startuml
     title COMP-GERAL-01 – Diagrama de Componentes do Sistema AcadMap (Visão de Alto Nível)
@@ -79,19 +87,21 @@ Clique nos blocos abaixo para visualizar versões em outros formatos:
     }
     @enduml
     ```
-??? note "Versão .png"
+??? info "Versão .png"
     ![COMP-GERAL-01](../diagramas/component/COMP-GERAL-01.png)
 
 
 ---
 
-## 5.1.1 Backend (Spring Boot - MVC)
+## 5.1.2 Backend (Spring Boot - MVC)
 
 A camada backend adota uma arquitetura monolítica com padrão **MVC (Model-View-Controller)**, sem modularização por domínio. O código é organizado em pacotes que refletem as camadas de controle (Controller), serviço (Service), persistência (Repository) e modelo de domínio (Model).
 
 Essa organização visa garantir clareza e manutenção simples, permitindo o crescimento gradual do sistema. Cada entidade do domínio é representada por um modelo, e manipulada por seus respectivos controladores, serviços e repositórios.
 
 ### Diagrama de Componentes do Backend - COMP-BACK-01
+!!! note "Nota"
+    Diagrama desenvolvido antes do recebimento dos insumos necessários para uma versão concreta
 ```mermaid
 graph TD
   subgraph controller
@@ -140,7 +150,7 @@ graph TD
 
 Clique nos blocos abaixo para visualizar versões em outros formatos:
 
-??? note "Versão PlantUML"
+??? info "Versão PlantUML"
     ```plantuml
     @startuml
     title Diagrama de Componentes - Backend AcadMap (Spring Boot - MVC) - COMP-BACK-01
@@ -189,13 +199,13 @@ Clique nos blocos abaixo para visualizar versões em outros formatos:
     MR --> M
     @enduml
     ```
-??? note "Versão .png"
+??? info "Versão .png"
     ![COMP-BACK-01](../diagramas/component/COMP-BACK-01.png)
 
 
 ---
 
-## 5.1.2 Frontend (React + Vite)
+## 5.1.3 Frontend (React + Vite)
 
 A camada frontend é implementada com React e Vite, utilizando o paradigma de componentização funcional. A aplicação é organizada em três principais diretórios lógicos:
 
@@ -204,6 +214,10 @@ A camada frontend é implementada com React e Vite, utilizando o paradigma de co
   * `services/`: Abstrai a comunicação com a API REST do backend, utilizando axios ou fetch.
 
 Essa organização permite alta reutilização, facilidade de testes e separação de responsabilidades. O fluxo de dados se baseia em props e hooks do React.
+
+### Diagrama de Componentes do Frontend - COMP-FRONT-01
+!!! note "Nota"
+    Diagrama desenvolvido antes do recebimento dos insumos necessários para uma versão concreta
 
 ```mermaid
 graph TD
@@ -239,7 +253,7 @@ graph TD
 
 Clique nos blocos abaixo para visualizar versões em outros formatos:
 
-??? "Versão PlantUML"
+??? info "Versão PlantUML"
     ```
       @startuml
       title COMP-FRONT-01 – Diagrama de Componentes do Frontend (React + Vite)
@@ -279,6 +293,7 @@ Clique nos blocos abaixo para visualizar versões em outros formatos:
       @enduml
     ```
 
-??? "Versão .png"
+??? info "Versão .png"
     ![COMP-FRONT-01](../diagramas/component/COMP-FRONT-01.png)
 
+---

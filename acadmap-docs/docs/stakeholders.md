@@ -11,3 +11,5 @@ A tabela a seguir apresenta os stakeholders identificados para este projeto, des
 | ST03 | DPO (Encarregado)   | Conformidade com a LGPD     | Garantir proteção de dados e conformidade com legislações         | P08, P10                  |
 | ST04 | Product Owner       | Representante do negócio    | Definir backlog, validar valor para o usuário, priorizar entregas | P02, P04, P08             |
 | ST05 | Analista de QA      | Garantia da Qualidade       | Verificar cobertura de testes, detectar falhas, validar entregas  | P03, P06, P09             |
+
+---

@@ -17,3 +17,4 @@ A tabela a seguir apresenta as principais preocupações levantadas, associadas 
 | P09 | Adoção de boas práticas de engenharia     | ST01, ST02, ST05          | VP02 (Desenvolvimento)                  |
 | P10 | Segurança e privacidade de dados          | ST03                      | VP01 (Lógico), VP03 (Implantação)       |
 
+---
