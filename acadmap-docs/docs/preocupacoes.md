@@ -4,17 +4,17 @@ As preocupações arquiteturais representam aspectos, requisitos e desafios crí
 
 A tabela a seguir apresenta as principais preocupações levantadas, associadas aos stakeholders que as expressam e aos pontos de vista arquiteturais que as endereçam.
 
-| ID  | Preocupação                               | Stakeholders Relacionados | Pontos de Vista Relacionados            |
-| --- | ----------------------------------------- | ------------------------- | --------------------------------------- |
-| P01 | Clareza e qualidade do código             | ST01, ST02                | VP02 (Desenvolvimento)                  |
-| P02 | Experiência do usuário (UX)               | ST02, ST04                | VP01 (Lógico), VP05 (Uso)               |
-| P03 | Testabilidade e cobertura de testes       | ST05                      | VP02 (Desenvolvimento), VP04 (Processo) |
-| P04 | Tempo de entrega e valor ao usuário final | ST04                      | VP02 (Desenvolvimento), VP05 (Uso)      |
-| P05 | Alta disponibilidade e desempenho         | ST01, ST02                | VP01 (Lógico), VP03 (Implantação)       |
-| P06 | Evolutividade e manutenção futura         | ST01, ST05                | VP01 (Lógico), VP02 (Desenvolvimento)   |
-| P07 | Integração com sistemas externos          | ST01                      | VP01 (Lógico), VP03 (Implantação)       |
-| P08 | Suporte a diferentes perfis de usuário    | ST03, ST04                | VP05 (Uso), VP01 (Lógico)               |
-| P09 | Adoção de boas práticas de engenharia     | ST01, ST02, ST05          | VP02 (Desenvolvimento)                  |
-| P10 | Segurança e privacidade de dados          | ST03                      | VP01 (Lógico), VP03 (Implantação)       |
+| ID  | Preocupação                               | Stakeholders Relacionados      | Pontos de Vista Relacionados            |
+| --- | ----------------------------------------- | ------------------------------ | --------------------------------------- |
+| P01 | Clareza e qualidade do código             | ST01, ST02, ST05               | VP02 (Desenvolvimento)                  |
+| P02 | Experiência do usuário (UX)               | ST02, ST03                     | VP01 (Lógico), VP05 (Uso)               |
+| P03 | Testabilidade e cobertura de testes       | ST04                           | VP02 (Desenvolvimento), VP04 (Processo) |
+| P04 | Tempo de entrega e valor ao usuário final | ST03                           | VP02 (Desenvolvimento), VP05 (Uso)      |
+| P05 | Alta disponibilidade e desempenho         | ST05                           | VP01 (Lógico), VP03 (Implantação)       |
+| P06 | Evolutividade e manutenção futura         | ST01, ST04, ST05               | VP01 (Lógico), VP02 (Desenvolvimento)   |
+| P07 | Integração com sistemas externos          | ST01, ST05                     | VP01 (Lógico), VP03 (Implantação)       |
+| P08 | Suporte a diferentes perfis de usuário    | ST03                           | VP05 (Uso), VP01 (Lógico)               |
+| P09 | Adoção de boas práticas de engenharia     | ST01, ST02, ST04               | VP02 (Desenvolvimento)                  |
+| P10 | Segurança e privacidade de dados          | ST05                           | VP01 (Lógico), VP03 (Implantação)       |
 
 ---

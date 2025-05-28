@@ -1,12 +1,12 @@
-# DAR - Documentação de Arquitetura de Software
+# DAS - Documentação de Arquitetura de Sistema
 
 Bem-vindo à documentação de arquitetura do sistema **AcadMap**!
 
-## O que é um DAR?
+## O que é um DAS?
 
-O **DAR** (Documento de Arquitetura de Software) é um artefato fundamental no processo de desenvolvimento de sistemas. Ele descreve, de forma estruturada, as principais decisões arquiteturais, componentes, módulos, interações e restrições que orientam a construção e evolução do software.
+O **DAR** (Documento de Arquitetura de Sistema) é um artefato fundamental no processo de desenvolvimento de sistemas. Ele descreve, de forma estruturada, as principais decisões arquiteturais, componentes, módulos, interações e restrições que orientam a construção e evolução do software.
 
-## Objetivos do DAR
+## Objetivos do DAS
 
 - **Registrar decisões arquiteturais** tomadas durante o projeto.
 - **Comunicar a arquitetura** para todos os stakeholders (desenvolvedores, clientes, gestores, etc).
