@@ -1,6 +1,13 @@
 site_name: DAS - AcadMap
 site_description: Documentação de Arquitetura de Sistema
-
+plugins:
+  - exporter:
+      formats:
+        pdf:
+          aggregator:
+            enabled: true
+            output: documentation.pdf
+            covers: all
 theme:
   name: material
   palette:
