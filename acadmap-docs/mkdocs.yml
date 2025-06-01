@@ -27,6 +27,7 @@ theme:
         name: Troca para o modo claro
   features:
     - content.diagrams
+    - content.tooltips
 
 markdown_extensions:
   - admonition
@@ -36,6 +37,11 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.details
+  - abbr
+  - attr_list
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
 
 nav:
   - Home: index.md

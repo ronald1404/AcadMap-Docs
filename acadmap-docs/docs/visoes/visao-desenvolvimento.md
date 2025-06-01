@@ -1,5 +1,7 @@
 # 5.2 Visão de Desenvolvimento
 
+![Static Badge](https://img.shields.io/badge/Arquitetura-%230074B6?style=for-the-badge&logo=githubactions&logoColor=%23F2F2F2) ![Static Badge](https://img.shields.io/badge/Desenvolvimento-%2300A36C?style=for-the-badge&logo=springboot&logoColor=%23F2F2F2)
+
 A Visão de Desenvolvimento descreve como o sistema AcadMap está estruturado em termos de diretórios, pacotes e organização do código-fonte. O sistema é composto por dois grandes blocos tecnológicos:
 
 * Backend monolítico com Java + Spring Boot

@@ -1,5 +1,7 @@
 # 4. Pontos de Vista Arquiteturais
 
+![Static Badge](https://img.shields.io/badge/Arquitetura-%230074B6?style=for-the-badge&logo=githubactions&logoColor=%23F2F2F2)
+
 Pontos de vista arquiteturais são descrições específicas de aspectos do sistema sob diferentes perspectivas, com o objetivo de abordar um subconjunto das preocupações levantadas pelos stakeholders. Cada ponto de vista adota uma notação e uma forma de representação adequada à natureza das informações que transmite. A adoção de múltiplos pontos de vista facilita a comunicação entre as partes interessadas, permite avaliações segmentadas da arquitetura e aumenta a rastreabilidade das decisões técnicas.
 
 A tabela a seguir descreve os pontos de vista adotados neste projeto, sua finalidade, artefatos utilizados e as principais preocupações que cada um trata.

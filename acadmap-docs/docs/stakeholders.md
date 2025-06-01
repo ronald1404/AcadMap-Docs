@@ -1,5 +1,7 @@
 # 2. Stakeholders
 
+![Static Badge](https://img.shields.io/badge/Arquitetura-%230074B6?style=for-the-badge&logo=githubactions&logoColor=%23F2F2F2) ![Static Badge](https://img.shields.io/badge/Gest%C3%A3o%20de%20Projeto-%23C97E10?style=for-the-badge&logo=jira&logoColor=%23F2F2F2)
+
 Stakeholders são indivíduos, grupos ou entidades que possuem interesse direto ou indireto na definição, evolução ou operação do sistema. Identificar claramente esses stakeholders é fundamental para garantir que suas preocupações sejam devidamente consideradas durante a elaboração da arquitetura. Isso contribui para a alocação adequada de responsabilidades, melhora a comunicação entre as partes envolvidas e fortalece o alinhamento entre os objetivos de negócio e as decisões técnicas.
 
 A tabela a seguir apresenta os stakeholders identificados para este projeto, descrevendo seus papéis, responsabilidades e as preocupações arquiteturais que representam.

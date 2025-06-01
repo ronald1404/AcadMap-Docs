@@ -1,5 +1,7 @@
 # Visão de Implantação
 
+![Static Badge](https://img.shields.io/badge/Arquitetura-%230074B6?style=for-the-badge&logo=githubactions&logoColor=%23F2F2F2)
+
 A Visão de Implantação descreve como o sistema AcadMap é fisicamente distribuído no ambiente de execução, com foco na infraestrutura de contêineres Docker. Essa visão é fundamental para compreender o ambiente operacional do sistema, incluindo a alocação de componentes, fluxos de comunicação, protocolos utilizados e fronteiras de segurança.
 
 O diagrama a seguir apresenta uma visão de alto nível da implantação do sistema em um cenário típico de produção, com os seguintes elementos principais:

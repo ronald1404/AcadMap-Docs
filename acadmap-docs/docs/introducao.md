@@ -1,4 +1,7 @@
 # 1. Introdução
+
+![Static Badge](https://img.shields.io/badge/Arquitetura-%230074B6?style=for-the-badge&logo=githubactions&logoColor=%23F2F2F2)
+
 Este documento descreve a arquitetura do sistema **AcadMap**, abordando suas principais decisões estruturais, visões, preocupações dos stakeholders e justificativas técnicas. Ele está baseado nos princípios básicos da ISO/IEC 42010, com foco em clareza, rastreabilidade e evolução futura do sistema.
 
 ### 1.1 Objetivo
@@ -21,5 +24,22 @@ Sistema web para permitir o armazenamento, consulta, classificação e geração
 - **COMP-BACK-01**, **SEQU-MTRC-02**, etc.: Códigos de identificação dos diagramas utilizados ao longo do documento, seguindo o padrão `[TIPO]-[OBJETO]-[NÚMERO]`.
 - **Controller / Service / Repository / Model**: Camadas da arquitetura backend seguindo o padrão MVC, responsáveis respectivamente por controlar requisições, encapsular regras de negócio, acessar dados e representar entidades de domínio.
 - **Pages / Components / Services (frontend)**: Diretórios lógicos do frontend React. `pages` contém telas principais, `components` agrupa componentes reutilizáveis, e `services` abstrai chamadas à API.
+
+## Equipes
+
+Gestão de Projeto  
+![Static Badge](https://img.shields.io/badge/Gest%C3%A3o%20de%20Projeto-%23C97E10?style=for-the-badge&logo=jira&logoColor=%23F2F2F2)
+
+Arquitetura  
+![Static Badge](https://img.shields.io/badge/Arquitetura-%230074B6?style=for-the-badge&logo=githubactions&logoColor=%23F2F2F2)
+
+Requisitos  
+![Static Badge](https://img.shields.io/badge/Requisitos-%23824DAB?style=for-the-badge&logo=notion&logoColor=%23F2F2F2)
+
+Desenvolvimento  
+![Static Badge](https://img.shields.io/badge/Desenvolvimento-%2300A36C?style=for-the-badge&logo=springboot&logoColor=%23F2F2F2)
+
+Testes  
+![Static Badge](https://img.shields.io/badge/Testes-%23D72638?style=for-the-badge&logo=testrail&logoColor=%23F2F2F2)
 
 ---
